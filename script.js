@@ -39,7 +39,16 @@ const student = {
   name: "Bill",
   age: 24,
   grades: [95,65,100,85],
-/*average: function(){return student.grades / 4};*/}
+  average: function()
+  {
+    let sum = 0;
+    for (let i = 0; i < this.grades.length; i++) {sum += this.grades[i];
+    }
+    console.log(sum / this.grades.length)
+  }}
+  console.log(student);
+  student.average();
+/*average: function(){return student.grades / 4};*/
   
   /*This is not functional syntax.  I will add a loop to iterate through the array, summing as it goes as well as dimensioning itself to the length of the array.  After this, it will take the sum and divide it by the length of the array(by length, I mean count of values stored in the array)*
 };
